@@ -1,7 +1,69 @@
-div{
-    background-color:rgb(30,30,30);
+
+
+body{
+    background-color: black;
 }
 
-p{
+.presentation{
+    float: left;
+    padding-top: 3%;
+    color: white;
+    font-size: 20px;
+    padding-left: 5%;
+}
+
+
+
+.peluche{
+    background-color:rgb(30,30,30);
+    margin-left: 60%;
+    height: 500px;
+    margin-right: 15%;
+    padding-top: 3%;
+}
+
+.peluche p{
+    color:white;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+
+h1{
+    margin-right: -20%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.menu_haut{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding-bottom: 3%;
+}
+
+.menu_haut a{
+    display:inline;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 200%;
+    font-weight: bold;
+    text-decoration: None;
     color: white;
 }
+
+.menu_haut:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.menu_haut:active{
+    text-decoration: none;
+    color: white;
+}
+
+
