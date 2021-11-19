@@ -1,5 +1,4 @@
 
-
 body{
     background-color: black;
 }
@@ -12,6 +11,27 @@ body{
     padding-left: 5%;
 }
 
+#produit{
+    width: 400px;
+    length: 400px;
+}
+
+#description{
+    color:white;
+}
+
+#right_button{
+    background-image: url("ressource/droite.png");
+    background-size: cover;
+    width: 360px; 
+    height: 360px; 
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+#nom_produit{
+    color: white;
+}
 
 
 .peluche{
