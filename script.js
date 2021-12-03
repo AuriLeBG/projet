@@ -18,8 +18,8 @@ let nom_list = ["Peluche Teemo",
 ]
 
 let imgs = ["ressource/5ba35dd655bf4fa121c2c601b0a3e5d3.png", 
-"ressource/FCfWfsaXoAQ9iFn.png",
-"ressource/chapeau-teemo_4.jpg",
+"ressource/calebard.png",
+"ressource/chapeau-teemo_4.png",
 "ressource/combi teemo.png"]
 let nombre = 0
 

@@ -1,44 +1,25 @@
 
+
 body{
     background-color: black;
 }
 
 .presentation{
     float: left;
-    padding-top: 3%;
+    padding-top: 2%;
     color: white;
     font-size: 20px;
     padding-left: 5%;
 }
 
-#produit{
-    width: 400px;
-    length: 400px;
-}
-
-#description{
-    color:white;
-}
-
-#right_button{
-    background-image: url("ressource/droite.png");
-    background-size: cover;
-    width: 360px; 
-    height: 360px; 
-    font-size: 3rem;
-    cursor: pointer;
-}
-
-#nom_produit{
-    color: white;
-}
 
 
 .peluche{
     background-color:rgb(30,30,30);
-    margin-left: 60%;
-    height: 500px;
-    margin-right: 15%;
+    margin-top: 5%;
+    margin-left: 70%;
+    height: 515px;
+    max-width: 380px;
     padding-top: 3%;
 }
 
@@ -62,14 +43,15 @@ h1{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: black;
-    padding-bottom: 3%;
+    background-color: rgba(30,30,30,.7);
+    padding-bottom: 1.5%;
+    text-align: center;
 }
 
 .menu_haut a{
     display:inline;
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: 4%;
+    margin-left: 4%;
     font-size: 200%;
     font-weight: bold;
     text-decoration: None;
@@ -79,6 +61,7 @@ h1{
 .menu_haut:hover{
     text-decoration: none;
     color: white;
+    margin-bottom: 0;
 }
 
 .menu_haut:active{
@@ -87,3 +70,39 @@ h1{
 }
 
 
+#produit_phare{
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-weight: 1000;
+    font-size: 1.5em;
+}
+
+#produit{
+    margin-top: 2.5%;
+	width: 400px;
+	height: 400px;
+}
+
+#description{
+    color: white;
+}
+
+#nom_produit{
+    color: white;
+}
+
+
+#left_button{
+    background: url(ressource/gauche.png);
+    width: 30px;
+	height: 30px;
+    border: none;
+}
+
+#right_button{
+    background: url(ressource/droite.png);
+    width: 30px;
+	height: 30px;
+    border: none;
+}
