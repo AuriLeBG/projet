@@ -1,3 +1,42 @@
+//Menu
+let accueil_button = document.getElementById("menu_accueil")
+let presentation_button = document.getElementById("menu_presentation")
+let produit_button = document.getElementById("menu_produit")
+let contact_button = document.getElementById("menu_contact")
+let payement_button = document.getElementById("payement")
+let page = "index"
+
+accueil_button.onclick = function(){
+    document.getElementById(page).style.display = "none";
+    page = "index"
+    document.getElementById(page).style.display = "block";
+}
+
+presentation_button.onclick = function(){
+    document.getElementById(page).style.display = "none";
+    page = "presentation"
+    document.getElementsById(page).style.display = "block";
+}
+
+produit_button.onclick = function(){
+    document.getElementById(page).style.display = "none";
+    page = "produit_service"
+    document.getElementById(page).style.display = "block";
+}
+
+contact_button.onclick = function(){
+    document.getElementById(page).style.display = "none";
+    page = "contact"
+    document.getElementById(page).style.display = "block";
+}
+
+payement_button.onclick = function(){
+    document.getElementById(page).style.display = "none";
+    page = "payement"
+    document.getElementById(page).style.display = "block";
+}
+
+//Produits
 let img = document.getElementById("produit")
 let right_button = document.getElementById("right_button")
 let left_button = document.getElementById("left_button")
@@ -7,7 +46,6 @@ let description_liste = ["peluche Teemo toute mignonne UwU",
 "Caleçon de chad pour charos des e-girls main support",
 "Un bonnet pour vous tenir chaud quand vous serez seul dans le froid d'hiver a pleuré sur un banc après avoir rater vos ds de mathématiques car quelle idée d'avoir inventé les nombres complexes ça porte bien son nom c'est vraiment trop complexe",
 "Jolie combinaison de Teemo Abeille qui vous accompagnera dans toutes vos plus belles soirées (je rigole vous êtes jamais invité en soirée)"
-
 ]
 
 let nom = document.getElementById("nom_produit")
@@ -21,8 +59,24 @@ let imgs = ["ressource/5ba35dd655bf4fa121c2c601b0a3e5d3.png",
 "ressource/calebard.png",
 "ressource/chapeau-teemo_4.png",
 "ressource/combi teemo.png"]
-let nombre = 0
+let prix = document.getElementById("prix_produit")
+let prix_list =[
+    19.99,
+    12.99,
+    14.99,
+    79.99
+]
 
+let nombre_commande = document.getElementById("nombre_produit") 
+let commande_button = document.getElementById("valider")
+let commande = []
+
+commande_button.onclick = function(){
+    commande.push([nombre, nombre_commande.value])
+}
+
+
+let nombre = 0
 left_button.onclick = function(){
     if(nombre != 0){
         nombre = nombre - 1
@@ -33,6 +87,7 @@ left_button.onclick = function(){
     img.setAttribute("src", imgs[nombre]);
     description.innerHTML = description_liste[nombre];
     nom.innerHTML = nom_list[nombre];
+    prix.innerHTML = prix_list[nombre] + " euros";
     
 }
 
@@ -45,6 +100,6 @@ right_button.onclick = function(){
     img.setAttribute("src", imgs[nombre]);
     description.innerHTML = description_liste[nombre];
     nom.innerHTML = nom_list[nombre];
-
-
+    prix.innerHTML = prix_list[nombre] + " euros";
 }
+
