@@ -1,39 +1,51 @@
+/* global */
+
 body{
     background-color: black;
 }
 
-.presentation{
-    float: left;
-    padding-top: 2%;
-    color: white;
-    font-size: 20px;
-    padding-left: 5%;
-}
-
-
-
-.peluche{
-    background-color:rgb(30,30,30);
-    margin-top: 5%;
-    margin-left: 70%;
-    height: 515px;
-    max-width: 380px;
-    padding-top: 3%;
-}
-
-.peluche p{
+a{
     color:white;
-    margin-right: 5px;
-    margin-left: 5px;
-    font-size: 20px;
-    text-align: center;
-
 }
-
 
 h1{
-    margin-right: -20%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:white;
+}
+
+h2{
+    color: orangered;
+    margin-left:2%;
+}
+
+p{
+    color:white;
+    margin-left: 3%;
+}
+
+li{
+    color:white;
+}
+
+/* Menu */
+
+#caddy{
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    position: float;
+}
+
+#div_panier{
+    height: 0px;
+    width: 220px;
+    background-color: rgb(30, 30, 30, 0.7);
+    display: none;
+    position: fixed;
+    margin-left: 57%;
+    margin-top: 2%;
+    border: solid;
+    border-color: black;
+    border-width: 2px;
 }
 
 .menu_haut{
@@ -46,27 +58,39 @@ h1{
     text-align: center;
 }
 
-.menu_haut a{
-    display:inline;
-    margin-right: 4%;
-    margin-left: 4%;
-    font-size: 200%;
-    font-weight: bold;
-    text-decoration: None;
-    color: white;
+/* Accueil */
+
+#index{
+    display:block;
 }
 
-.menu_haut:hover{
-    text-decoration: none;
-    color: white;
-    margin-bottom: 0;
+.presentation{
+    float: left;
+    padding-top: 2%;
+    font-size: 20px;
+    padding-left: 5%;
 }
 
-.menu_haut:active{
-    text-decoration: none;
-    color: white;
+#presentation h1{
+    margin-right: -20%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.peluche{
+    background-color:rgb(30,30,30);
+    margin-top: 5%;
+    margin-left: 70%;
+    height: 515px;
+    max-width: 380px;
+    padding-top: 3%;
+}
+
+.peluche p{
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    text-align: center;
+}
 
 #produit_phare{
     margin: 0;
@@ -74,48 +98,49 @@ h1{
     color: white;
     font-weight: 1000;
     font-size: 1.5em;
+    margin-bottom: -5px;
 }
 
-#index{
-    display:block;
-}
+/* Contact */
 
 #contact{
     display: none;
+    padding-top: 5%;
 }
+
+/* Presentation */
 
 #presentation{
     display: none;
+    padding-top: 5%;
 }
+
+#presentation img{
+    width: 216px;
+    height: 144px;
+    margin-left: 3%;
+}
+
+#mon_nom{
+    margin-left: 5%;
+}
+
+/* Produit Service */
 
 #produit_service{
     display: none;
 }
 
-#payement{
-    display: none;
+#visionneuse_photo{
+    margin-left: 35%;
+    margin-top: 2%;
 }
-
 
 #produit{
     margin-top: 2.5%;
 	width: 400px;
 	height: 400px;
 }
-
-
-#prix_produit{
-    color: white;
-}
-
-#description{
-    color: white;
-}
-
-#nom_produit{
-    color: white;
-}
-
 
 #left_button{
     background: url(ressource/gauche.png);
@@ -130,3 +155,38 @@ h1{
 	height: 30px;
     border: none;
 }
+
+#achat_produit{
+    margin-left: 50%;
+    margin-top: -5%;
+}
+
+/* Payement */
+
+#payement{
+    display: none;
+    padding-top: 5%;
+}
+
+#payement h2{
+    font-size: 35px;
+}
+
+#payement button{
+    height: 20px;
+    width: 60px;
+    margin-left: 3%;
+}
+
+#produit_image{
+    width: 50px;
+    position:fixed;
+    margin-top: 5%;
+    margin-right: 1%
+}
+
+#facture{
+    font-size: 30px;
+    margin-left : 7%;
+}
+

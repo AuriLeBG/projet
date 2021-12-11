@@ -17,6 +17,12 @@
             <input type=button value="Produit/Services" id="menu_produit">
             <input type=button value="Liens" id="menu_contact">
             <input type=button value="Payement" id="menu_payement">
+            <img src="ressource/caddy.png" id="caddy">
+
+        </div>
+
+        <div id = "div_panier">
+            <p id="texte_panier"></p>
         </div>
 
         <!--Page Menu-->
@@ -33,7 +39,7 @@
                 </ul>
             </div>
             <div class="peluche"> 
-                <div id="produit_phare">Notre produit phare</div>
+                <p id="produit_phare">Notre produit phare</p>>
                 <img src="ressource/5ba35dd655bf4fa121c2c601b0a3e5d3.png">
                 <p>Magnifique peluche Teemo pour vous accompagner dans la tristesse apres des dizaines de ranked perdues.</p>
             </div>
@@ -41,34 +47,64 @@
 
         <!--Page Contact-->
         <div id="contact">
+            <h2>Nos réseaux !</h2>
+            <ul>
+                <li><a href="https://twitter.com/siphano" target="_blank">Notre Twitter !</a></li>
+                <li><a href="https://www.youtube.com/channel/UCwa-qCAFghXwkcQvLadzRxQ" target="_blank">Notre Youtube !</a></li>
+                <li><a href="https://www.twitch.tv/siphano" target="_blank">Notre Twitch !</a></li>
+                <li><a href="https://minecraft.fandom.com/fr/wiki/Siphano" target="_blank">Notre Wikipédia !</a></li>
+                <li><a href="https://siterondoudou-website.herokuapp.com/informatique.html" target="_blank">Site web a la gloire de rondoudou</a></li>
+                <li><a href="https://www.amazon.fr/gp/help/customer/display.html?nodeId=201909000&ref_=footer_cou" target="_blank">Condition générale de vente</a></li>
+            </ul>
+            
 
         </div>
 
         <!--Page presentation-->
         <div  id="presentation">
-        
+
+            <h2>Qui sommes-nous?</h2>
+            <p>Nous sommes 2 developpeurs passioné par League Of Legends (en vrai pire jeu vive smash bros)</p>
+            <p>Developpeur : Dark Vador Gaming et ArthurHtcr(htcr c'est hautecoeur sans les voyelles et hautecoeur c'est son nom dcp ça tombe bien)</p>
+            <p>Graphiste : C'est arthur aussi, moi j'utilise paint c pas fou</p>
+            <img src="ressource/Moi.jpg">
+            <p id="mon_nom">Dark Vador Gaming</p>
         </div>
         
 
         <!--Page Produit/Service-->
         <div id="produit_service">
             
-            <div>
+            <div id="visionneuse_photo">
                 <input type=button id="left_button">
                 <img id="produit" src="ressource/5ba35dd655bf4fa121c2c601b0a3e5d3.png">
                 <input type=button id="right_button">
             </div>
     
-            <div>
+            <div id="fiche_technique">
+                <h2>Description : </h2>
                 <p id="description">peluche Teemo toute mignonne UwU</p>
+                <h2>Nom : </h2>
                 <p id="nom_produit">Peluche Teemo</p>
+                <h2> Prix :</h2>
                 <p id="prix_produit">19.99 euros</p>
+            </div>
+            <div id="achat_produit">
                 <input id="nombre_produit" type=number min=0 max=999>
                 <input type=button id="valider">
             </div>
         </div>
-        <!--Page Payement-->
-        <div id="payement">
 
+
+        <!--Page Payement-->
+
+        <div id="payement">
+            <div id="produit_image"></div>
+            <div id="zone_facture">
+                <h2>Facture :</h2>
+                <p id = "facture"></p>
+                <h2 id= "prix_final"></h2>
+                <button id="boutton_payement" type=button value="Payer"></button>
+            </div>
         </div>
     </body>
