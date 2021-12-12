@@ -112,6 +112,10 @@ commande_button.onclick = function(){
             commande[i][1] = nombre_commande.value
             test = true
         }
+        if(commande[i][0] <= 0){
+            commande.splice(i, 1)
+
+        }
     }
     if(test == false){
         commande.push([nombre, nombre_commande.value])
