@@ -2,6 +2,7 @@
 
 body{
     background-color: black;
+    min-width:1280px;
 }
 
 a{
@@ -31,8 +32,8 @@ li{
 #caddy{
     height: 30px;
     width: 30px;
+    margin-left: 90%;
     margin-top: 10px;
-    position: float;
 }
 
 #div_panier{
@@ -41,7 +42,7 @@ li{
     background-color: rgb(30, 30, 30, 0.7);
     display: none;
     position: fixed;
-    margin-left: 57%;
+    margin-left: 80%;
     margin-top: 2%;
     border: solid;
     border-color: black;
@@ -53,9 +54,8 @@ li{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(30,30,30,.7);
     padding-bottom: 1.5%;
-    text-align: center;
+    padding-left: 15%;
 }
 
 /* Accueil */
@@ -66,7 +66,7 @@ li{
 
 .presentation{
     float: left;
-    padding-top: 2%;
+    padding-top: 1%;
     font-size: 20px;
     padding-left: 5%;
 }
@@ -78,7 +78,7 @@ li{
 
 .peluche{
     background-color:rgb(30,30,30);
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: 70%;
     height: 515px;
     max-width: 380px;
@@ -121,8 +121,21 @@ li{
     margin-left: 3%;
 }
 
+
+#moi_image{
+    float: left;
+}
+
+
 #mon_nom{
+    word-spacing: 125px;
     margin-left: 5%;
+}
+#Arthurhtcr{
+    width: 72px;
+    margin: 0;
+    margin-left: 20%;
+    float: right;
 }
 
 /* Produit Service */
@@ -156,6 +169,13 @@ li{
     border: none;
 }
 
+#valider{
+    background: url(ressource/valider.png);
+    width: 30px;
+	height: 30px;
+    border: none;
+}
+
 #achat_produit{
     margin-left: 50%;
     margin-top: -5%;
@@ -166,6 +186,7 @@ li{
 #payement{
     display: none;
     padding-top: 5%;
+    padding-left: 10%;
 }
 
 #payement h2{
@@ -190,3 +211,180 @@ li{
     margin-left : 7%;
 }
 
+#boutton_payement{
+    background: url(ressource/payer.png);
+    width: 66px;
+	height: 16px;
+    border: none;
+}
+
+/* Animation Bouton menu */
+div.toggle{
+    margin-top: 20%;
+}
+
+.toggle{
+    z-index: 2;
+    transition-duration: .5s;
+    position: absolute;
+    margin: 0;
+    margin-left: 25px;
+    width: 50px;
+    height: 50px;
+    background: rgba(70,70,70,.7);
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.toggle span{
+    transition-duration: 2s;
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: orangered;
+    box-shadow: 0 0px 10px orangered;
+    border-radius: 4px;
+    margin-top: 23px;
+    margin-left: 5px;
+}
+
+.toggle span:nth-child(1)
+{
+    transition-duration: .5s;
+    transform: translateY(-15px);
+    width: 15px;    
+    rotate: 45deg;
+    left: 18px;
+    top: 7px;
+}
+
+.toggle span:nth-child(2)
+{
+    transition-duration: .5s;
+    transform: translateY(-15px);
+    width: 15px;
+    rotate: 315deg;
+    left: 39px;
+    top: 15px;
+}
+
+
+.toggle.active{
+    position: absolute;
+    z-index: 2;
+    transition-duration: .5s;
+    margin-top: 140px;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(70,70,70,.7);
+}
+
+
+.toggle.active span:nth-child(3)
+{
+    transition-duration: .1s;
+    transform: translateX(-60px);
+}
+
+.toggle.active span:nth-child(1)
+{
+    width: 35px;
+    margin: 0;
+    margin-right: 15px;
+    margin-top: 150px;
+    transform: translateX(0);
+}
+
+.toggle.active span:nth-child(2)
+{
+    width: 35px;
+    margin: 0;
+    margin-top: 142px;
+    margin-left: -21px;
+    transform: translateX(0);
+}
+
+.menu_haut{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 30px;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.toggle.active .menu_haut{
+    visibility: visible;
+}
+
+.menu_haut li::marker{
+	color: transparent;
+}
+
+.menu_haut li{
+    margin-bottom: 15px;
+}
+
+#menu_accueil{
+    border: none;
+    background-color: rgba(70,70,70,0);
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#menu_accueil:hover{
+    background-color:rgba(255,69,0,.9);
+    border-radius: 5px;
+}
+
+#menu_presentation{
+    border: none;
+    background-color: rgba(70,70,70,0);
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#menu_presentation:hover{
+    background-color:rgba(255,69,0,.9);
+    border-radius: 5px;
+}
+
+#menu_produit{
+    border: none;
+    background-color: rgba(70,70,70,0);
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#menu_produit:hover{
+    background-color:rgba(255,69,0,.9);
+    border-radius: 5px;
+}
+
+#menu_contact{
+    border: none;
+    background-color: rgba(70,70,70,0);
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#menu_contact:hover{
+    background-color:rgba(255,69,0,.9);
+    border-radius: 5px;
+}
+
+#menu_payement{
+    border: none;
+    background-color: rgba(70,70,70,0);
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#menu_payement:hover{
+    background-color:rgba(255,69,0,.9);
+    border-radius: 5px;
+}

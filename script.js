@@ -49,7 +49,7 @@ payement_button.onclick = function(){
         affichage += nom_list[commande[i][0]] + "&nbsp : &nbsp" + commande[i][1] + "&nbsp * &nbsp" + prix_list[commande[i][0]] + "$ &nbsp = &nbsp" + roundUp(prix_list[commande[i][0]] * commande[i][1], 2) +  "$<br><br>"
         prix_total += prix_list[commande[i][0]] * commande[i][1]
     }
-    prix_final.innerHTML = "Prix total : " + roundUp(prix_total, 2) + "$"
+    prix_final.innerHTML = "Prix total : " + roundUp(prix_total, 2) + "€"
     facture.innerHTML = affichage
 }
 
@@ -169,10 +169,10 @@ panier.onmouseover = function(){
     if (commande.length != 0){
         document.getElementById("div_panier").style.display = "block";
         for (let i = 0; i < commande.length; i ++) {
-            affichage += nom_list[commande[i][0]] + " : " + commande[i][1] + "*" + prix_list[commande[i][0]] +  "$ <br>"
+            affichage += nom_list[commande[i][0]] + " : " + commande[i][1] + "*" + prix_list[commande[i][0]] +  "€ <br>"
             prix_total += prix_list[commande[i][0]] * commande[i][1]
         }
-        affichage += "<br> prix total = " + roundUp(prix_total, 2) + "$"
+        affichage += "<br> prix total = " + roundUp(prix_total, 2) + "€"
         affichage_panier.innerHTML = affichage
     }
 }
