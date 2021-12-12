@@ -46,7 +46,10 @@ payement_button.onclick = function(){
     let affichage = ""
     let prix_total = 0
     for (let i = 0; i < commande.length; i ++) {
-        affichage += nom_list[commande[i][0]] + "&nbsp : &nbsp" + commande[i][1] + "&nbsp * &nbsp" + prix_list[commande[i][0]] + "$ &nbsp = &nbsp" + roundUp(prix_list[commande[i][0]] * commande[i][1], 2) +  "$<br><br>"
+        if (commande[i][1] < 0){
+            commande[i][1] = commande[i][1]*(-1)
+        }
+        affichage += nom_list[commande[i][0]] + "&nbsp : &nbsp" + commande[i][1] + "&nbsp * &nbsp" + prix_list[commande[i][0]] + "€ &nbsp = &nbsp" + roundUp(prix_list[commande[i][0]] * commande[i][1], 2) +  "$<br><br>"
         prix_total += prix_list[commande[i][0]] * commande[i][1]
     }
     prix_final.innerHTML = "Prix total : " + roundUp(prix_total, 2) + "€"
@@ -105,6 +108,7 @@ let nombre_commande = document.getElementById("nombre_produit")
 let commande_button = document.getElementById("valider")
 let commande = []
 
+
 commande_button.onclick = function(){
     let test = false
     for (let i = 0; i < commande.length; i ++){
@@ -114,10 +118,7 @@ commande_button.onclick = function(){
         }
     }
 
-    if(commande[i][0] <= 0){
-        commande.splice(i, 1)
 
-    }
 
 
     if(test == false){
@@ -176,6 +177,9 @@ panier.onmouseover = function(){
     if (commande.length != 0){
         document.getElementById("div_panier").style.display = "block";
         for (let i = 0; i < commande.length; i ++) {
+            if (commande[i][1] < 0){
+                commande[i][1] = commande[i][1]*(-1)
+            }
             affichage += nom_list[commande[i][0]] + " : " + commande[i][1] + "*" + prix_list[commande[i][0]] +  "€ <br>"
             prix_total += prix_list[commande[i][0]] * commande[i][1]
         }
