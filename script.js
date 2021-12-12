@@ -112,11 +112,14 @@ commande_button.onclick = function(){
             commande[i][1] = nombre_commande.value
             test = true
         }
-        if(commande[i][0] <= 0){
-            commande.splice(i, 1)
-
-        }
     }
+
+    if(commande[i][0] <= 0){
+        commande.splice(i, 1)
+
+    }
+
+
     if(test == false){
         commande.push([nombre, nombre_commande.value])
         let image = document.createElement("img")
@@ -192,4 +195,9 @@ boutton_payement.onclick = function(){
     window.open("https://www.youtube.com/watch?v=NAyyEHQAO0I", '_blank');
 }
 
+// fonction pour le menu déroulant
 
+let menutoggle = document.querySelector(".toggle");
+menutoggle.onclick = function(){
+    menutoggle.classList.toggle("active")
+}

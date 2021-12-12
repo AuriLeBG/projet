@@ -27,7 +27,7 @@ li{
     color:white;
 }
 
-/* Menu */
+/* Caddie */
 
 #caddy{
     height: 30px;
@@ -58,7 +58,7 @@ li{
     padding-left: 15%;
 }
 
-/* Accueil */
+/* Page Accueil */
 
 #index{
     display:block;
@@ -101,18 +101,28 @@ li{
     margin-bottom: -5px;
 }
 
-/* Contact */
+/* Page Contact */
 
 #contact{
     display: none;
-    padding-top: 5%;
+    padding-top: 1%;
+    padding-left: 10%;
 }
 
-/* Presentation */
+#contact li::marker{
+	color: transparent;
+}
+
+#contact li{
+    padding-bottom: 15px;
+}
+
+/* Page Presentation */
 
 #presentation{
     display: none;
-    padding-top: 5%;
+    padding-top: 1%;
+    padding-left: 10%;
 }
 
 #presentation img{
@@ -138,7 +148,7 @@ li{
     float: right;
 }
 
-/* Produit Service */
+/* Page Produit Service */
 
 #produit_service{
     display: none;
@@ -181,11 +191,11 @@ li{
     margin-top: -5%;
 }
 
-/* Payement */
+/* Page Payement */
 
 #payement{
     display: none;
-    padding-top: 5%;
+    padding-top: 1%;
     padding-left: 10%;
 }
 
@@ -245,7 +255,7 @@ div.toggle{
     box-shadow: 0 0px 10px orangered;
     border-radius: 4px;
     margin-top: 23px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .toggle span:nth-child(1)
@@ -253,9 +263,9 @@ div.toggle{
     transition-duration: .5s;
     transform: translateY(-15px);
     width: 15px;    
-    rotate: 45deg;
+    transform: rotate(45deg);
     left: 18px;
-    top: 7px;
+    top: -4px;
 }
 
 .toggle span:nth-child(2)
@@ -263,9 +273,9 @@ div.toggle{
     transition-duration: .5s;
     transform: translateY(-15px);
     width: 15px;
-    rotate: 315deg;
-    left: 39px;
-    top: 15px;
+    transform: rotate(315deg);
+    left: 18px;
+    top: 4px;
 }
 
 
@@ -293,6 +303,7 @@ div.toggle{
     margin-right: 15px;
     margin-top: 150px;
     transform: translateX(0);
+    transform: rotate(315deg);
 }
 
 .toggle.active span:nth-child(2)
@@ -300,10 +311,12 @@ div.toggle{
     width: 35px;
     margin: 0;
     margin-top: 142px;
-    margin-left: -21px;
     transform: translateX(0);
+    transform: rotate(45deg);
 }
 
+
+/* Mise en forme des boutons des différentes pages du site */
 .menu_haut{
     position: absolute;
     margin-top: 50px;
